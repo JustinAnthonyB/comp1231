@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Javascript - Week 3 Practice</title>
+</head>
+<body>
+    <h3>
+        My Grade
+    </h3>
+    <div id="content"></div>
+
+    <!---Script used for determining final grades--->
+    <script type="text/javascript">
+        
+        /* Call variables and create prompt*/
+        var class_name, class_grade_num, class_grade_let, to_write;
+        class_grade_num=prompt('Please enter your grade for the '+class_name+' class.');
+        
+        /* IF, ELSE, and IF ELSE statements used to sort prompt input*/
+        if (class_grade_num>=90) {
+            class_grade_let = 'A';
+        }
+        else if (class_grade_num>=80) {
+            class_grade_let = 'B';
+        }
+        else if (class_grade_num>=70) {
+            class_grade_let = 'C';
+        }
+        else if (class_grade_num>=60) {
+            class_grade_let = 'D';
+        }
+        else if (class_grade_num>=50<=59) {
+            class_grade_let = 'D-';
+        }
+        else (class_grade_let=='F');
+
+        /* Set 'to_write' to write output to the screen */
+        to_write='I took the class '+class_name+' and earned a grade of '+class_grade_let;
+        to_write+='. I recieved a mark of '+class_grade_num+' in it.';
+
+        document.getElementById('content').innerHTML=write_to;
+    </script>
+</body>
+</html>
